@@ -1,4 +1,25 @@
+body {
+	background-color: #FFF;
+	color: #333333;
+	margin: 0px;
+	padding: 0px;
+  font-family: "Lato", helvetica, sans-serif;
+}
+
+nav {
+	margin-bottom: 20px;
+}
+
+.navbar-brand {
+  font-style:normal;
+}
+
 img {
     width: 100%;
     height: inherit;
+}
+
+.dropdown-menu > .active > a{
+	color: #333;
+	background-color: #e7e7e7;
 }
