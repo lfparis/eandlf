@@ -7,6 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Eirini and Luis Felipe</title>
 
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -36,6 +37,14 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
   </head>
   <body>
     <!-- *********** NAVBAR ************ -->
@@ -77,15 +86,36 @@
 
     <!-- *********** REST ************* -->
     <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <div id='map'></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2 id="placeholder">COMING SOON!</h2>
+            <h2 id="placeholder">MORE DETAILS COMING SOON!</h2>
           </div>
       </div>
     </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!--CUSTOM-->
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibGZwYXJpcyIsImEiOiJNUUJIbWRzIn0._7H_qC4m3wS2srJ_pupRvA';
+    var map = new mapboxgl.Map({
+        container: 'map', // container id
+        style: 'mapbox://styles/lfparis/cizcxizrj008r2sqinf4hp512', //hosted style id
+        center: [25.91,36.85], // starting position
+        zoom: 10.7 // starting zoom
+    });
+    </script>
   </body>
 </html>
