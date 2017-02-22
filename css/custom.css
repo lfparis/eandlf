@@ -69,6 +69,7 @@ p{
 	width:100%;
 	text-align:center;}
 
-a{
+p > a{
   	color: #333;
+	text-decoration: underline;
 }
