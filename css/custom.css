@@ -17,6 +17,12 @@ body {
 	background-color: #e7e7e7;
 }
 
+img {
+    width: 100%;
+    height: inherit;
+		z-index: -1;
+}
+
 h1{
 	color: #333;
 	font-weight: 100;
