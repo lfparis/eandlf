@@ -4,12 +4,12 @@ body {
 	color: #333333;
 	margin: 0px;
 	padding: 0px;
-  font-family: 'futura-pt', sans-serif;
+  	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	font-weight: 100;
 }
 
 .navbar-brand {
-  font-style:normal;
+  	font-style:normal;
 }
 
 .dropdown-menu > .active > a{
@@ -18,9 +18,9 @@ body {
 }
 
 img {
-    width: 100%;
-    height: inherit;
-		z-index: -1;
+    	width: 100%;
+    	height: inherit;
+    	z-index: -1;
 }
 
 h1{
@@ -46,7 +46,7 @@ h3{
 }
 
 p{
-	font-family: 'Cormorant Garamond','EB Garamond', serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-weight:semi-bold,100;
 	color: #333;
 	font-weight: 100;
@@ -67,5 +67,5 @@ p{
 	text-align:center;}
 
 a{
-  color: #333;
+  	color: #333;
 }
