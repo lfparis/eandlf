@@ -113,12 +113,16 @@
     <script src="js/bootstrap.min.js"></script>
     <!--CUSTOM-->
     <script>
+      var mapZoom = 10.7;
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+          mapZoom = mapZoom*0.7;
+      }
       mapboxgl.accessToken = 'pk.eyJ1IjoibGZwYXJpcyIsImEiOiJNUUJIbWRzIn0._7H_qC4m3wS2srJ_pupRvA';
       var map = new mapboxgl.Map({
           container: 'map', // container id
           style: 'mapbox://styles/lfparis/cizhkpgzr000c2spevf0xw8cd', //hosted style id
           center: [25.91,36.85], // starting position
-          zoom: 10.7 // starting zoom
+          zoom: mapZoom // starting zoom
       });
       map.addControl(new mapboxgl.NavigationControl()); //Nav control
       //Custom Markers//
