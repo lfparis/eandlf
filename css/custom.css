@@ -11,6 +11,7 @@ body {
 
 .navbar-brand {
   	font-style:normal;
+    font-weight:100;
 }
 
 .dropdown-menu > .active > a{
@@ -48,8 +49,6 @@ h3{
 }
 
 p{
-	/*'Lato' 'Raleway' 'Josefin Sans' 'Didact Gothic'*/
-	/*font-family:'Didact Gothic', sans-serif;*/
 	font-weight:100;
 	line-height:160%;
 	color: #333;
