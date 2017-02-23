@@ -4,7 +4,8 @@ body {
 	color: #333333;
 	margin: 0px;
 	padding: 0px;
-  	font-family: 'Lato', Helvetica, Arial, sans-serif;
+  /*'Lato' 'Raleway' 'Josefin Sans' 'Didact Gothic'*/
+  font-family: 'Didact Gothic', sans-serif;
 	font-weight: 100;
 }
 
@@ -47,9 +48,8 @@ h3{
 }
 
 p{
-	/*font-family: 'Cormorant Garamond', serif;
-	font-weight:semi-bold;*/
-	font-family:'Lato', Helvetica, Arial, sans-serif;
+	/*'Lato' 'Raleway' 'Josefin Sans' 'Didact Gothic'*/
+	font-family:'Didact Gothic', sans-serif;
 	font-weight:100;
 	line-height:160%;
 	color: #333;
