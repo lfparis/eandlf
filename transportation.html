@@ -97,11 +97,37 @@
         </div>
       </div>
     </div>
+    
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <!--<h3>How to get around</h3>-->
-          <h3>More details coming soon!</h3>
+          <h3>How to get around</h3>
+          <p>
+            Amorgos is not a small island and it is totally worth exploring! 
+            It is a 90-minute drive from tip to tip with many beautiful beaches, villages and other places of interest in between.<br>
+            <br>
+            The best way to get around is by car, and we strongly recommend that you rent one. 
+            There are car rentals at both ports, Aegiali and Katapola, where you can pick up and drop off a car you've booked in advance. 
+            You should be able to pick up your car when your ship arrives even if the car rental is closed 
+            - they will just leave your car ready with the keys inside! Most car rentals also rent out scooters and quad bikes as well.<br>
+            <br>
+            There are several car rentals in Amorgos, some of which are: 
+            <a href="http://www.thomas-rental.gr/" target="_blank">Thomas</a>
+            , 
+            <a href="http://www.fmrentacaramorgos.gr" target="_blank">FM</a>
+            , 
+            <a href="http://www.evdokiasrentacar.gr" target="_blank">Evdokias</a>
+            , and 
+            <a href="https://www.grysposhotel-amorgos.com/car-rental-amorgos.html" target="_blank">Gryspo</a>
+            . 
+            We recommend renting as early as possible. You certainly shouldn't leave it for when you arrive.<br>
+            <br>
+            You can also get around the island by bus, but service is sporadic and stops early. 
+            Also, there are a few 
+            <a href="http://amorgos.gr/amorgos-useful-information/amorgos-taxi/" target="_blank">taxis</a>
+             on the island, but they operate on a flat rate and are typically very expensive. 
+            Sorry guys, no Über in Amorgos yet!
+          </p>
         </div>
       </div>
     </div>
@@ -112,12 +138,18 @@
     <script src="js/bootstrap.min.js"></script>
     <!--CUSTOM-->
     <script>
+      var mapZoom = 10.7;
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+          if(window.innerHeight > window.innerWidth){
+              mapZoom = mapZoom*0.87;
+          }
+      }
       mapboxgl.accessToken = 'pk.eyJ1IjoibGZwYXJpcyIsImEiOiJNUUJIbWRzIn0._7H_qC4m3wS2srJ_pupRvA';
       var map = new mapboxgl.Map({
           container: 'map', // container id
           style: 'mapbox://styles/lfparis/cizgk5j9w008i2so3qiw0aega', //hosted style id
           center: [25.91,36.85], // starting position
-          zoom: 10.7 // starting zoom
+          zoom: mapZoom // starting zoom
       });
       map.addControl(new mapboxgl.NavigationControl()); //Nav control
       //Custom Markers//
