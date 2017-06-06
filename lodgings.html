@@ -149,7 +149,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!--CUSTOM-->
     <script>
-      var mapZoom = 10.7;
+      var mapZoom = 13.3;
       if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
           if(window.innerHeight > window.innerWidth){
               mapZoom = mapZoom*0.87;
@@ -159,7 +159,7 @@
       var map = new mapboxgl.Map({
           container: 'map', // container id
           style: 'mapbox://styles/lfparis/cizgk5j9w008i2so3qiw0aega', //hosted style id
-          center: [25.91,36.85], // starting position
+          center: [25.983,36.911], // starting position
           zoom: mapZoom // starting zoom
       });
       map.addControl(new mapboxgl.NavigationControl()); //Nav control`
